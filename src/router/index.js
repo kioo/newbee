@@ -8,7 +8,10 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      index: 1
+    }
   },
   {
     path: '/about',
@@ -16,7 +19,10 @@ Vue.use(VueRouter)
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    meta: {
+      index: 2  // 添加 meta 属性，约定 2 为第二级
+    }
   }
 ]
 
