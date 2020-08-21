@@ -1,5 +1,5 @@
 # newbee
-
+模版项目，作为前端的一个开发模版
 ## Project setup
 ```
 npm install
